@@ -1,5 +1,5 @@
 # TaskVAE
-The implementation of the PhD thesis: TaskVAE-GMM: Memory-Efficient Generative Replay for Class-Incremental Learning in Human Activity Recognition
+The implementation of the PhD thesis: DAR: A Memory-Efficient Generative Replay for Class-Incremental Learning in Human Activity Recognition
 
 ## Table of Content
 * [1. Installation](#1-installation)
@@ -9,7 +9,7 @@ The implementation of the PhD thesis: TaskVAE-GMM: Memory-Efficient Generative R
   * [2.1 Important Parameters](#21-Important-Parameters)
   * [2.2 Replay-Based Methods](#22-Replay-Based-Methods)
   * [2.3 TaskVAE](#23-TaskVAE)
-  * [2.4 TaskVAE-GMM](#24-TaskVAE-GMM)
+  * [2.4 Density-Aware Generative Replay](#24-Density-Aware-Generative-Replay)
   * [2.5 Different Ratios of Generated Sample Size](#25-Different-Size-Ratio-of-Synthetic-Data-from-TaskVAE)
 * [3. Detailed Results](#3-Detailed-Results)
 
@@ -77,15 +77,15 @@ Below is the sample commands to run TaskVAE experiments for both with and withou
   ```
   python runner.py --dataset 'motion' --total_classes 6 --new_classes '31' --base_classes 2 --epochs 20 --method 'ce' --exemplar 'taskvae' --vae_lat_sampling 'boundary_box' --latent_vec_filter 'probability' --person 0
   ```
-### 2.4 TaskVAE-GMM
-For TaskVAE-GMM, run the following:
+### 2.4 Density-Aware Generative Replay
+For DAR, run the following:
 
 - TaskVAE-GMM:
   ```
   python runner.py --dataset 'motion' --total_classes 6 --new_classes '31' --base_classes 2 --epochs 20 --method 'ce' --exemplar 'taskvae' --vae_lat_sampling 'gmm' --person 0
   ```
 
-### 2.5 Different Size Ratio of Synthetic Data from TaskVAE
+### 2.5 Different Size Ratio of Synthetic Data from DAR
 For the study of the impact of sample size of generated data from TaskVAE, run the following:
 
   ```
@@ -95,4 +95,4 @@ For the study of the impact of sample size of generated data from TaskVAE, run t
 The output files are stored in 'output_reports/' folder which will automatically appears when a experiment command is launched. The output files contains necessary information including the data size, exemplar size, and the detailed results (Accuracy of all, old, and new classes) in each task. 
  
 ## 3. Detailed Results:
-More details on the figures and tables of each dataset in this paper can be accessed through this link: https://bonpagnakann.github.io/TaskVAE-GMM_Vis/
+More details on the figures and tables of each dataset in this paper can be accessed through this link: https://bonpagnakann.github.io/DAR_Viz/
