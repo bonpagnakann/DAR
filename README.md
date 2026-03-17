@@ -1,5 +1,5 @@
 # TaskVAE
-The implementation of the PhD thesis: DAR: A Memory-Efficient Generative Replay for Class-Incremental Learning in Human Activity Recognition
+The implementation of Density-Aware-Generative-Replay (DAR) in the PhD thesis of Memory-Efficient Generative Replay for Class-Incremental Learning in Human Activity Recognition.
 
 ## Table of Content
 * [1. Installation](#1-installation)
@@ -9,7 +9,7 @@ The implementation of the PhD thesis: DAR: A Memory-Efficient Generative Replay 
   * [2.1 Important Parameters](#21-Important-Parameters)
   * [2.2 Replay-Based Methods](#22-Replay-Based-Methods)
   * [2.3 TaskVAE](#23-TaskVAE)
-  * [2.4 Density-Aware Generative Replay](#24-Density-Aware-Generative-Replay)
+  * [2.4 Density-Aware Generative Replay (DAR)](#24-Density-Aware-Generative-Replay)
   * [2.5 Different Ratios of Generated Sample Size](#25-Different-Size-Ratio-of-Synthetic-Data-from-TaskVAE)
 * [3. Detailed Results](#3-Detailed-Results)
 
