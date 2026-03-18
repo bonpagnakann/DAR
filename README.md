@@ -1,4 +1,4 @@
-# TaskVAE
+# Density-Aware-Generative-Replay (DAR)
 The implementation of Density-Aware-Generative-Replay (DAR) in the PhD thesis of Memory-Efficient Generative Replay for Class-Incremental Learning in Human Activity Recognition.
 
 ## Table of Content
@@ -80,7 +80,6 @@ Below is the sample commands to run TaskVAE experiments for both with and withou
 ### 2.4 Density-Aware Generative Replay
 For DAR, run the following:
 
-- TaskVAE-GMM:
   ```
   python runner.py --dataset 'motion' --total_classes 6 --new_classes '31' --base_classes 2 --epochs 20 --method 'ce' --exemplar 'taskvae' --vae_lat_sampling 'gmm' --person 0
   ```
