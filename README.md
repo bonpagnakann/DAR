@@ -85,7 +85,7 @@ For DAR, run the following:
   ```
 
 ### 2.5 Different Size Ratio of Synthetic Data from DAR
-For the study of the impact of sample size of generated data from TaskVAE, run the following:
+For the study of the impact of sample size of generated data from DAR, run the following:
 
   ```
   python runner.py --dataset 'motion' --total_classes 6 --new_classes '31' --base_classes 2 --epochs 20 --method 'ce' --exemplar 'taskvae_ratio' --person 0
