@@ -34,7 +34,7 @@ The dataset can be downloaded from this Google Drive link: https://drive.google.
 In the following commands of running experiment for each method, the necessary arguments are defined as follows:
 - ```--dataset```: The dataset can be selected from ['motion', 'realworld', 'hhar', 'pamap', 'uci']
 
-- ```--total_classes``` : 6 for MotionSense, HHAR and UCI dataset, 8 for RealWorld, and 10 for PAMAP2 Dataset.
+- ```--total_classes``` : 6 for MotionSense, HHAR and UCI HAR dataset, 8 for RealWorld, and 10 for PAMAP2 Dataset.
 
 - ```--base_classes``` : The number of classes in the first task.
 
